@@ -53,6 +53,35 @@ curl http://localhost:8080/todos
 
 Deberías recibir una respuesta JSON con la lista de tareas pendientes.
 
+## Ejecución en local
+
+Si prefieres ejecutar la aplicación directamente en tu entorno local (sin Docker), sigue estos pasos:
+
+### Requisitos
+
+- Tener instalado el [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+
+### Pasos para ejecutar
+
+1. Abre una terminal en el directorio raíz del proyecto.
+2. Accede a la carpeta de la aplicación:
+   ```bash
+   cd WebApplicationExample
+   ```
+3. Ejecuta la aplicación con el siguiente comando:
+   ```bash
+   dotnet run
+   ```
+4. La API estará disponible por defecto en `http://localhost:8080` y `https://localhost:8081`.
+
+Puedes probar los endpoints utilizando `curl` o una herramienta como Postman:
+
+```bash
+curl http://localhost:8080/todos
+```
+
+Deberías recibir una respuesta JSON con la lista de tareas pendientes.
+
 ## Comandos Docker útiles
 
 ### Ver los logs del contenedor
